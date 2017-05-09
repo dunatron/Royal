@@ -1,0 +1,65 @@
+/**
+Tweaks and Fixes
+**/
+
+.user-content ol {
+  list-style-type: decimal !important;
+  padding-left: 1em;
+}
+
+.user-content ol ol {
+  list-style-type: lower-latin !important;
+}
+
+.user-content ol ol ol{
+  list-style-type: lower-roman !important;
+}
+
+.child-links {
+	
+	padding-bottom: 15px;
+}
+
+.child-links:first-child {
+	padding-top: 15px;
+}
+
+.child-links h2 { 
+	font-size: 1.2em; 
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.child-links p { 
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.breadcrumbs { 
+	text-transform: uppercase; 
+}
+
+.sliderloader {
+	position: absolute;
+	top: 46%;
+	right: 43%;
+	display:none;
+}
+
+.videowrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+}
+.videowrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.sign-up-newletters-outer
+{
+	border-right: none !important;
+}

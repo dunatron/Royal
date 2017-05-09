@@ -1,0 +1,28 @@
+//Breakpoints
+$mob-bp:		320px;
+$tab-bp:		768px;
+$full-bp:		1170px;
+
+$color-black:	#000;
+$color-white:	#fff;
+$color-red:		#d32b1e;
+$color-grey:	#e1e1e1;
+$color-light-grey:	#e7e7e7;
+
+
+//Fonts
+$font-bold:	bold;
+$font-letter-space:	1.5px;
+$font-family: museo-sans, sans-serif;
+
+
+//spacing
+
+$fullscreen-margin: 45px;
+$medscreen-margin: 30px;
+$smallscreen-margin: 15px;
+
+$full-content-padding: 0px $fullscreen-margin 0px $fullscreen-margin;
+
+$small-content-padding: 0px $smallscreen-margin 0px $smallscreen-margin;
+

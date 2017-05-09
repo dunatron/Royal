@@ -1,0 +1,13 @@
+.is-visible {
+    visibility: visible;
+    /*opacity: 1;*/
+}
+
+.not-visible {
+    visibility: hidden;
+    /*opacity: 0;*/
+}
+
+.filter-grant-who {
+    /*transition: opacity 1s ease;*/
+}

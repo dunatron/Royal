@@ -1,0 +1,16 @@
+---
+Name: royalsiteroutes
+After: framework/routes#coreroutes
+---
+Director:
+  rules:
+    'members//$Action/$ID' : 'Members_Controller',
+    'staffpage//$Action/$ID' : 'StaffPage_Controller',
+    'homefunction//$Action/$ID' : 'Home_Controller',
+    'media//$Action/$ID' : 'Media_Controller',
+    'microsite//$Action/$ID' : 'MicroSite_Controller',
+    # 'ResearchBulkLoader//$Action'  : 'ResearchBulkLoader',
+    # 'SocioBulkLoader//$Action'  : 'SocioBulkLoader',
+    # 'pdf//$Action/$ID': 'PDFController'
+    'search//$Action/$ID' : 'Page_Controller',
+    'pagefunction//$Action/$ID'  : 'Page_Controller'

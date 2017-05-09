@@ -1,0 +1,118 @@
+.search-wrapper{
+	position:absolute;
+	// width:0%;
+	// height:0%;
+	background-color:$color-white;
+	//z-index:1;
+	left:-5000px;
+	opacity:0;
+	transition: opacity .25s ease-in-out;
+	padding:$small-content-padding;	
+	@media screen and (min-width: $tab-bp) {
+		padding:$medscreen-margin;
+	}
+	@media screen and (min-width: $full-bp) {
+		padding:$full-content-padding;
+	}
+	.search-container{
+		position:relative;
+		@media screen and (min-width: $tab-bp) {
+			max-width:768px;
+			margin:auto;
+		}
+		@media screen and (min-width: $full-bp) {
+			max-width:800px;
+			margin:auto;
+		}
+		h3{
+			padding-bottom:10px;
+		}
+		
+		.searchForm{
+			margin-top:120px;
+			border-bottom:1px black solid;
+			height:72px;
+			@media screen and (min-width: $tab-bp) {
+				margin-top:175px;
+			}
+			.search{
+				font-size:22px;
+				width:100%;
+				border:0;
+				padding-right:60px;
+				font-family: $font-family;
+				font-weight:700;
+				height:70px;
+				@media screen and (min-width: $tab-bp) {
+					font-size:45px;
+					line-height: 48px;
+				}
+
+				&:focus{
+					outline-width:0;
+				}
+				&::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+				    color:    $color-black;
+				}
+				&:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+				   color:    $color-black;
+				   opacity:  1;
+				}
+				&::-moz-placeholder { /* Mozilla Firefox 19+ */
+				   color:    $color-black;
+				   opacity:  1;
+				}
+				&:-ms-input-placeholder { /* Internet Explorer 10-11 */
+				   color:    $color-black;
+				}
+			}
+		}
+		.search-active{
+		    position: absolute;
+		    border:0;
+		    right:0px;
+		    height: 46px;
+		    width: 46px;
+		    cursor: pointer;
+		    top: -23px;
+		    background-repeat:no-repeat;
+		    background-color:white;
+
+			background-image:url("../img/controls/search-open.svg");
+			//margin: 40px 0px 0px $smallscreen-margin;
+			
+			@media screen and (min-width: $tab-bp) {
+				right:70px;
+				top:10px;
+			}
+			@media screen and (min-width: $full-bp) {
+			}
+			.magnif{
+
+			}
+		}
+	}
+	.vistorstatus{
+		vertical-align: middle;
+		display:block;
+		float:left;
+		clear:both;
+		@media screen and (min-width: $tab-bp) {
+			clear:initial;
+		}	
+	}
+	label{ 
+		cursor:pointer;
+		display:block;
+		float:left;
+		margin:13px 25px 0px 0px;
+	}
+}
+.search-fade{
+	z-index:5;
+	opacity:1;
+	width:100%;
+	height:100%;
+	top:0px;
+	left:0px;
+}

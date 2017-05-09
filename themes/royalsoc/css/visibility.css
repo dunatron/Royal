@@ -1,0 +1,46 @@
+.is-visible {
+    visibility:visible;
+    /*opacity: 1;*/
+}
+
+.not-visible {
+    visibility:none;
+    /*opacity: 0;*/
+}
+
+.calc .is-visible {
+    display:block;
+    /*opacity: 1;*/
+}
+
+.calc .not-visible {
+    display:none;
+    /*opacity: 0;*/
+}
+
+.filter-grant-who {
+    /*transition: opacity 1s ease;*/
+}
+.calc .content-select{
+	clear:both;
+}
+.calc .content-select h3{
+	padding-bottom:0px;
+	clear:both;
+}
+.calc .selectbox{
+	float:left;
+}
+.calc .calc-full-list-container{
+	clear:both;
+	//padding:20px;
+	background-color:#e1e1e1;
+}
+.calc .calc-full-list-container .calc-item-paragraph{
+	font-weight:700;
+	padding:20px;
+	font-size:19px;
+}
+.calc .calc-full-list-container h2{
+	padding:20px;
+}

@@ -1,0 +1,113 @@
+.no-svg{
+	.wrap{
+		.search-container{
+			.search-active{
+				background-image:url("../img/controls/search-open.png") !important;
+			}
+		}
+
+		.vistorstatus[type="radio"] {
+		    -webkit-appearance: none !important;
+		    appearance: none !important;
+		   -moz-appearance: none !important;
+		    background: url("../img/controls/radio-button.png") left center no-repeat !important;    
+		}
+		.vistorstatus[type="radio"]:checked {
+		    background: url("../img/controls/radio-button-select.png") left center no-repeat !important;
+		}
+
+		.banner{
+			img{
+			}
+			.logo{
+				background-image:url("../img/navigation/main-logo-desktop.png") !important;
+
+			}
+			.banner-content{
+				.search{
+					background-image:url("../img/controls/search-icon.png") !important;
+					.magnif{
+
+					}
+				}
+			}
+		}
+
+
+		.social-icons{
+			.fb-icon{
+				background-image:url("../img/foot/facebook-icon.png") !important;
+				&:hover{
+					background-image:url("../img/foot/facebook-icon-hover.png") !important;
+				}
+			}
+			.twitter-icon{
+				background-image:url("../img/foot/twitter-icon.png") !important;
+				&:hover{
+					background-image:url("../img/foot/twitter-icon-hover.png") !important;
+				}
+			}
+		}
+		.quote-block{	
+			.quote-person{
+				background-image:url("../img/main/quote-icon.png") !important;
+			}
+		}
+
+
+		.right-share{
+			background-image:url("../img/foot/share-icon.png") !important;
+		}
+		.footer-content{
+			.social-icons{
+
+			}
+			.foot-logos{
+
+				.footlogo150{
+					background-image:url("../img/foot/150th-logo.png") !important;
+				}
+			}
+			.foot-eds{
+				background-image:url("../img/foot/tagline-logo.png") !important;
+			}
+			.newsletters-signup{
+				.newsletter-select{
+					//height:40px !important;
+					background-image:url("../img/foot/select-drop.png") !important;
+				}
+			}
+		}
+
+
+	}
+}
+// .csstransforms{
+
+// 		.arrow-container{
+// 			background-image:url("../img/controls/arrow-grey-down.png") !important;
+// 			.arrow-head{
+// 			}
+// 			.arrow-line{
+// 			}
+// 		}
+
+// 	.activity-block{
+// 		.arrow-container{
+// 			background-image:url("../img/controls/arrow-white.png") !important;
+// 			.arrow-head{
+// 			}
+// 			.arrow-line{
+// 			}
+// 		}
+	
+// 	.bottom-share{
+// 		.arrow-container{
+// 			background-image:url("../img/controls/arrow-black.png") !important;
+// 			.arrow-head{
+// 			}
+// 			.arrow-line{
+// 			}
+// 		}
+// 	}
+// }

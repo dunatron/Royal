@@ -1,0 +1,31 @@
+# ignore cache folder
+/silverstripe-cache/
+
+# ignore all environment files
+_ss_environment.php
+
+# ignore build tools
+/tools/phing-metadata
+
+# ignore composer vendor folder
+/vendor/
+
+/siteconfig
+/reports
+/framework
+/cms
+/assets
+.idea/
+
+.editorconfig
+.htaccess
+README.md
+index.php
+install-frameworkmissing.html
+web.config
+.solr/
+
+#ignore pushing/pulling database connection details
+/mysite/_config.php
+atlassian-ide-plugin.xml
+install.php

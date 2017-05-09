@@ -1,0 +1,41 @@
+---
+Name: mysite
+After:
+  - 'framework/*'
+  - 'cms/*'
+---
+# YAML configuration for SilverStripe
+# See http://doc.silverstripe.org/framework/en/topics/configuration
+# Caution: Indentation through two spaces, not tabs
+SSViewer:
+  theme: 'royalsoc'
+DateField:
+  default_config:
+    showcalendar: true
+LeftAndMain:
+  extra_requirements_css:
+    - mysite/code/admin/css/RoyalAdmin.css
+SiteConfig:
+  extensions:
+    - RoyalSiteConfig
+HTTP:
+  MimeTypes:
+    'svgz': 'application/x-gzip'
+    'eps': 'application/octet-stream'
+File:
+  allowed_extensions:
+    - 'svgz'
+    - 'eps'
+  extensions:
+    - FileTextExtractable
+---
+Name: mytextextraction
+After: '#textextraction'
+---
+Injector:
+  FileTextCache: FileTextCache_SSCache
+FileTextCache_SSCache:
+  lifetime: 3600 # Number of seconds to cache content for
+
+SolrCellTextExtractor:
+  base_url: 'http://localhost:8983/solr/RoyalIndex/update/extract'

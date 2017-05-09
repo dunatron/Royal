@@ -1,0 +1,95 @@
+.modal{
+	.modal-content{
+		padding:15px;
+		@media screen and (min-width: $tab-bp) {
+			padding:30px;
+
+		}
+
+		@media screen and (min-width: $full-bp) {
+			padding:45px;
+			
+		}
+		.close{
+			position:absolute;
+			top:15px;
+			right:15px;
+			height: 46px;
+    		width: 46px;
+    		background-color:$color-white;
+    		border:none;
+    		z-index:1;
+			.close-button{
+				top:0px;
+				right:0px;
+			}
+		}
+		.modal-body{
+			padding-top:50px;
+			@media screen and (min-width: $tab-bp) {
+				padding-top:0px;
+			}
+			h2{
+				padding:0px 0px 5px 0px;
+			}
+			input[type="checkbox"]{
+				margin-top:10px;
+			}
+			.modal-member-image{
+				float:left;
+				margin:0px 20px 20px 0px;
+			}
+			.modal-member-title, .modal-member-honoraries{
+				font-weight:300;
+			}
+			.title-modal-member-biography, .title-modal-member-grants, .title-modal-member-awards{
+				padding:20px 0px 0px 0px;
+			}
+
+
+
+
+
+		}
+		.mod-col-left{
+			@media screen and (min-width: $tab-bp) {
+				padding-right:30px;
+			}
+		}
+		.mod-col-right{
+			@media screen and (min-width: $tab-bp) {
+				padding-left:30px;
+			}
+		}
+	}
+}
+
+#eventModal{
+	.modal-content{
+		.modal-body{
+			label{
+			}
+			fieldset{
+				//width:50%;
+				input[type="text"]{
+					width:100%;
+				}
+				label{
+					cursor: pointer;
+				    float: left;
+				}
+				input[type="radio"]{
+					cursor: pointer;
+				    display: block;
+				    float: left;
+				}
+				
+
+			}
+			.guestimage{
+				padding-bottom:30px;
+				border-bottom:1px $color-grey solid;
+			}
+		}
+	}
+}

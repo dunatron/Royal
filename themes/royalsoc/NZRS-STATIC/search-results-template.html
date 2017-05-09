@@ -1,0 +1,699 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <script src="https://use.typekit.net/euo0upv.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/vendor/bootstrap-modal.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <!--[if lt IE 9]>
+            <script type="text/javascript" src="js/vendor/min/respond.min.js"></script>
+            <link rel="stylesheet" href="css/ie8.css">
+            <script type="text/javascript" src="js/vendor/min/jquery-1.12.4.min.js"></script>           
+        <![endif]-->
+
+    </head>
+    <body class="wrap content search-results">
+
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="banner">
+            <a href="/" class="logo">
+            </a>
+            <div class="banner-content">
+                <div class="hamburger">
+                    <span class="filling"></span>
+                </div>
+                <div class="search">
+                    <span class="magnif"></span>
+                </div>
+                <div class="donate">
+                    <a href="#donate" >
+                        Donate
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="search-wrapper">
+            <div class="search-container">
+                <div class="close-button">
+                </div>
+                
+
+                <form class="searchForm">
+                    <input type="text" name="search" class="search" placeholder="Search">
+                    <button type="submit" class="search-active"></button>
+
+                </form>
+                 <h3>Explore as a</h3>
+                <!-- need to be submitted with above form -->
+                <input class="vistorstatus" id="firstvs" type="radio" name="vistorstatus" value="researcher"/>
+                <label for="firstvs">Researcher</label>
+                <input class="vistorstatus" id="secondvs" type="radio" name="vistorstatus" value="stuteach"/>
+                <label for="secondvs">Student or Teacher</label>
+                <input class="vistorstatus" checked="checked" id="thirdvs" type="radio" name="vistorstatus" value="mempublic"/>
+                <label for="thirdvs">Member of public</label>
+
+            </div>
+           
+        </div>
+
+        <div class="nav-wrapper">
+            <div class="nav-container">
+                <div class="hamburger-close">
+                    <span class="filling"></span>
+                </div>
+                <div class="donate">
+                    <a href="#donate" >
+                        Donate
+                    </a>
+                </div>
+                <div class="clear"></div>
+                <ul class="nav-links">
+                    <li class="parent md-col-6 lrg-col-4"><a class="inactive" href="#">Top level A</a>
+                        <div class="arrow-container">
+                            <span class="arrow-head"></span>
+                            <span class="arrow-line"></span>
+                        </div>
+                        <ul class="children">
+                            <li class="child"><a href="http://www.google.com">Level A1</a></li>
+                            <li class="child"><a href="#">Level A2</a></li>
+                            <li class="child"><a href="#">Level A3</a></li>
+                            <li class="child"><a href="#">Level A4</a></li>
+                        </ul>
+                    </li>
+                    <li class="parent md-col-6 lrg-col-4"><a class="inactive" href="#">Top level B</a>
+                        <div class="arrow-container">
+                            <span class="arrow-head"></span>
+                            <span class="arrow-line"></span>
+                        </div>
+                        <ul class="children">
+                            <li class="child"><a href="#">Level B1</a></li>
+                            <li class="child"><a href="#">Level B2</a></li>
+                            <li class="child"><a href="#">Level B3</a></li>
+                            <li class="child"><a href="#">Level B4</a></li>
+                        </ul>
+                    </li>
+                    <li class="parent md-col-6 lrg-col-4"><a class="inactive" href="#">Top level C</a>
+                        <div class="arrow-container">
+                            <span class="arrow-head"></span>
+                            <span class="arrow-line"></span>
+                        </div>
+                        <ul class="children">
+                            <li class="child"><a href="#">Level C1</a></li>
+                            <li class="child"><a href="#">Level C2</a></li>
+                            <li class="child"><a href="#">Level C3</a></li>
+                            <li class="child"><a href="#">Level C4</a></li>
+                        </ul>
+                    </li>
+                    <li class="parent md-col-6 lrg-col-4"><a class="inactive" href="#">Top level D</a>
+                        <div class="arrow-container">
+                            <span class="arrow-head"></span>
+                            <span class="arrow-line"></span>
+                        </div>
+                        <ul class="children">
+                            <li class="child"><a href="#">Level D1</a></li>
+                            <li class="child"><a href="#">Level D2</a></li>
+                            <li class="child"><a href="#">Level D3</a></li>
+                            <li class="child"><a href="#">Level D4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+        
+        <!-- Add your site or application content here -->
+        <div class="container">
+
+            <div class="breadcrumbs">
+                <a class="bc-parent" href="">
+                    HOME
+                </a>
+                <a class="bc-active" href="">
+                    SEARCH RESULTS
+                </a>
+            </div>
+            
+            <div class="content-wrapper lrg-col-9 md-col-8">
+                <div class="filter-trigger">
+                    <span>FILTERS</span>
+                    <img src="img/controls/homepage/communities-tab-arrow.svg"/>
+                </div>
+                <h1>Search Results</h1>
+                <p>Content text at top of page if user wants...</p>
+                <h3 class="result-search-term">Results containing "Word"</h3>
+                <div class="results-container">
+
+                    
+                    <div class="result-item-container content">
+                        <a href="#">
+                            <h3>Title Heading</h3>
+                        </a>
+                        <p> 300 Characters Content-- Lorem ip, sum text er. Lorem ip, sum text er. Lorem ip, sum text er. Lorem ip, sum text er. Lorem ip, sum text er. Lorem ip, sum text er. Lorem ip, sum text er. Lorem ip, sum text er. Lorem ip, sum text er. Lorem ip, sum text er. Lorem ip, sum text er. </p>
+
+                        <pre><strong>Content Page</strong> Result Above</pre>
+                    </div>
+
+                    
+                    <div class="result-item-container award-medal">
+                        <a href="#">
+                            <p><span>ORCID: </span>0000-0002-4510-0385</p>
+                            <p><span>Firstname: </span>Joe</p>
+                            <p><span>Lastname: </span>Bloggs</p>
+                            <p><span>Award/Medal Type: </span>Medal</p>
+                            <p><span>Year Awarded: </span>2013</p>
+                        </a>
+                        <p>300 Characters Citation -- Lorem ip, sum text er. Lorem ip, sum text er. Lorem ip, sum text er. Lorem ip, sum text er. Lorem ip, sum text er. Lorem ip, sum text er. Lorem ip, sum text er. Lorem ip, sum text er. Lorem ip, sum text er. Lorem ip, sum text er. Lorem ip, sum text er. </p>
+                    
+                        <pre><strong>Award/Medal</strong> Result Above</pre>
+                    </div>
+
+                    <div class="result-item-container research-funding">
+                        <a href="#">
+                            <img class="result-image" src="http://placekitten.com/130/158"/>
+                            <p><span>ORCID: </span>0000-0002-4510-0385</p>
+                            <p><span>Research Contract Number: </span>002112345</p>
+                            <p><span>Firstname: </span>Joe</p>
+                            <p><span>Lastname: </span>Bloggs</p>
+                            <p><span>Class of memberships: </span>Associate Member</p>
+                            <p><span>Organisation: </span>Geoscience Society of New Zealand</p>
+                            <p><span>Year Joined: </span>2012</p>
+                            <p><span>Awards and Medals revieved: </span>Rumford Medal, Copley Medal</p>
+                            <p><span>Research Funding: </span>$8400.00</p>
+                        </a>
+                        <div class="clear"></div>
+                        <pre><strong>Researcher/Funding</strong> Result Above</pre>
+                    </div>
+
+                    <div class="result-item-container membership">
+                        <a href="#">
+                            <img class="result-image" src="http://placekitten.com/130/158"/>
+                            <p><span>ORCID: </span>0000-0002-4510-0385</p>
+                            <p><span>Research Contract Number: </span>002112345</p>
+                            <p><span>Firstname: </span>Joe</p>
+                            <p><span>Lastname: </span>Bloggs</p>
+                            <p><span>Class of membership: </span>Associate Member</p>
+                            <p><span>Organisation: </span>Geoscience Society of New Zealand</p>
+                            <p><span>Year Joined: </span>2012</p>
+                            <p><span>Awards and Medals revieved: </span>Rumford Medal, Copley Medal</p>
+                            <p><span>Research Funding: </span>$8400.00</p>
+                        </a>
+                        <div class="clear"></div>
+                        <pre><strong>Membership</strong> Result Above</pre>
+                    </div>
+
+                    <div class="result-item-container event">
+                        <a href="#">
+                            <p><span>Event Title: </span>The Annual Science Meet 2017</p>
+                            <p><span>Topic: </span>Physics and Astrology</p>
+                            <p><span>Location: </span>Auckland</p>
+                            <p><span>Speaker: </span>Joe Bloggs</p>
+                            <p><span>Host Organisations: </span>Astroscience Society of New Zealand</p>
+                            <p><span>Event Date: </span>14/09/2017</p>
+                        </a>
+                            <div class="clear"></div>
+                        </a>
+                        <pre><strong>Event</strong> Result Above</pre>
+                    </div>
+
+                    <div class="result-item-container document">
+                        <a href="#">
+                            <a href="#">
+                                <h3>Joe Bloggs Patent and Research 0127 <span>(.PDF) </span></h3>
+                            </a>
+                            <p>300 Characters Document -- Lorem ip, sum text er. Lorem ip, sum text er. Lorem ip, sum text er. Lorem ip, sum text er. Lorem ip, sum text er. Lorem ip, sum text er. Lorem ip, sum text er. Lorem ip, sum text er. Lorem ip, sum text er. Lorem ip, sum text er. Lorem ip, sum text er. </p>
+                            <div class="clear"></div>
+                        </a>
+                        <pre><strong>Document</strong> Result Above</pre>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="filter-wrap lrg-col-3 md-col-4">
+                <div class="form-search-container">
+                    
+
+                    <h3>Filters:</h3>
+                    
+
+                    <form> 
+                    <fieldset class="search-wrap recent-search-container">
+                        <legend>Your recent search:</legend>
+                        <div class="fieldsetPadding">
+                            <a class="search-term" href="">Funding</a>
+                            <a class="search-term" href="">ORCID</a>
+                            <a class="search-term" href="">Events</a>
+                            <a class="search-term" href="">Events Auckland</a>
+                            <a class="search-term" href="">Research Funding</a>
+                        </div>
+                    </fieldset>                  
+                    <fieldset class="search-wrap">
+                            <legend>Search Content:</legend>
+
+                            <div class="fieldsetPadding">
+                                <label>Search Panels:</label>
+                                    <div class="selectbox">
+                                        <select id="panelSearch" class="selectbox-select">
+                                            <option value="" disabled selected>Panel..</option>
+                                            <option value="pan1">Panel Title One</option>
+                                            <option value="pan2">Panel Title Two</option>
+                                            <option value="pan3">Panel Title Three</option>
+                                            <option value="pan4">Panel Title Four</option>
+                                            <option value="pan5">Panel Title Five</option>
+                                            <option value="pan6">Panel Title Six</option>
+                                            <option value="pan7">Panel Title Seven</option>
+                                            <option value="pan8">Panel Title Eight</option>
+                                        </select>
+                                    </div>
+                                
+
+                                
+                                
+                                <label>Search Projects:</label>
+                                    <div class="selectbox">
+                                        <select id="panelSearch" class="selectbox-select">
+                                            <option value="" disabled selected>Project..</option>
+                                            <option value="prj1">Project Title One</option>
+                                            <option value="prj2">Project Title Two</option>
+                                            <option value="prj3">Project Title Three</option>
+                                            <option value="prj4">Project Title Four</option>
+                                            <option value="prj5">Project Title Five</option>
+                                            <option value="prj6">Project Title Six</option>
+                                            <option value="prj7">Project Title Seven</option>
+                                            <option value="prj8">Project Title Eight</option>
+                                        </select>
+                                    </div>
+                                
+                                
+                                
+                                <label>Publication Type:</label>
+                                    <input type="checkbox" name="checkboxReport">
+                                    <label class="rad" for="checkboxReport">Report</label>
+                                    <input type="checkbox" name="checkboxPaper">
+                                    <label class="rad" for="checkboxPaper">Paper</label>
+                                    <input type="checkbox" name="checkboxJournal">
+                                    <label class="rad" for="checkboxJournal">Journal</label>
+                                
+
+                                
+                                
+                                    <div class="clear"></div>
+                                    <label>Date Published:</label>
+                                    <div class="selectbox">
+                                        <select id="searchDateYear" class="selectbox-select">
+                                            <option value="" disabled selected>Year..</option>
+                                            <option value="sy1">2017</option>
+                                            <option value="sy2">2016</option>
+                                        </select>
+                                    </div>
+                            </div>
+                        </fieldset>
+                        <br/>
+
+                        <fieldset class="search-wrap award-medal-wrap">
+                            <legend>Awards and medals</legend>
+                            <div class="fieldsetPadding">
+                                <label>Year awarded:</label>
+                                <div class="selectbox">
+                                    <select id="searchMedalAward" class="selectbox-select">
+                                        <option value="" disabled selected>Award/Medal..</option>
+                                        <option value="am1">Callaghan Medal</option>
+                                        <option value="am2">Charles Fleming Award</option>
+                                        <option value="am3">Cooper Award</option>
+                                        <option value="am4">Cooper Medal</option>
+                                        <option value="am5">Dame Joan Metge Medal</option>
+                                        <option value="am6">Hamilton Award</option>
+                                        <option value="am7">Hatherton Award</option>
+                                        <option value="am8">Hector Medal</option>
+                                    </select>
+                                </div>
+
+
+
+                                <label>Year awarded:</label>
+                                <div class="selectbox">
+                                    <select id="searchMedalYear" class="selectbox-select">
+                                        <option value="" disabled selected>Year..</option>
+                                        <option value="ya1">2017</option>
+                                        <option value="ya2">2016</option>
+                                        <option value="ya1">2015</option>
+                                        <option value="ya2">2014</option>
+                                        <option value="ya1">2013</option>
+                                        <option value="ya2">2012</option>
+                                        <option value="ya1">2011</option>
+                                        <option value="ya2">2010</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                        </fieldset>
+
+
+                        <fieldset class="search-wrap research-fund-wrap">
+                            <legend>Researcher and funding</legend>
+                            <div class="fieldsetPadding">
+
+                                <label>Year awarded:</label>
+                                <div class="selectbox">
+                                    <select id="searchFundYearAwarded" class="selectbox-select">
+                                        <option value="" disabled selected>Year..</option>
+                                        <option value="rfy1">2017</option>
+                                        <option value="rfy2">2016</option>
+                                        <option value="rfy3">2015</option>
+                                        <option value="rfy4">2014</option>
+                                        <option value="rfy5">2013</option>
+                                        <option value="rfy6">2012</option>
+                                        <option value="rfy7">2011</option>
+                                        <option value="rfy8">2010</option>
+                                    </select>
+                                </div>
+
+                                <label>Minimum Fund:</label>
+                                <div class="selectbox">    
+                                    <select id="searchFundMin" class="selectbox-select">
+                                        <option value="" disabled selected>Min fund..</option>
+                                        <option value="rfmin1">Any</option>
+                                        <option value="rfmin2">$500.00</option>
+                                        <option value="rfmin3">$1000.00</option>
+                                        <option value="rfmin4">$2000.00</option>
+                                        <option value="rfmin5">$5000.00</option>
+                                    </select>
+                                </div>
+
+
+                                <label>Maximum Fund:</label>
+                                <div class="selectbox">
+                                    <select id="searchFundMax" class="selectbox-select">
+                                        <option value="" disabled selected>Max fund..</option>
+                                        <option value="rfmax1">Any</option>
+                                        <option value="rfmax2">$500.00</option>
+                                        <option value="rfmax3">$1000.00</option>
+                                        <option value="rfmax4">$2000.00</option>
+                                        <option value="rfmax5">$5000.00</option>
+                                        <option value="rfmax5">$10000.00</option>
+                                    </select>
+                                </div>
+
+                                <label>Lastname:</label>
+                                <input placeholder="Lastname.." id="lastnameFund" type="text"/>
+                                <label>Firstname:</label>
+                                <input placeholder="Firstname.." id="firstnameFund" type="text"/>
+
+                                <label>Year joined:</label>
+                                <div class="selectbox">
+                                    <select id="searchFundYearJoined" class="selectbox-select">
+                                        <option value="" disabled selected>Year..</option>
+                                        <option value="rfy1">2017</option>
+                                        <option value="rfy2">2016</option>
+                                        <option value="rfy3">2015</option>
+                                        <option value="rfy4">2014</option>
+                                        <option value="rfy5">2013</option>
+                                        <option value="rfy6">2012</option>
+                                        <option value="rfy7">2011</option>
+                                        <option value="rfy8">2010</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                        </fieldset>
+
+
+                        <fieldset class="search-wrap membership-wrap">
+                            <legend>Memberships</legend>
+                            <div class="fieldsetPadding">
+
+                                <label>Lastname:</label>
+                                <input placeholder="Lastname.." id="lastnameMember" type="text"/>
+                                <label>Firstname:</label>
+                                <input placeholder="Firstname.." id="firstnameMember" type="text"/>
+
+                                <label>Class of membership:</label>
+                                <div class="selectbox">
+                                    <select id="memberClassSearch"  class="selectbox-select">
+                                        <option value="" disabled selected>Class..</option>
+                                        <option value="cls1">Class One</option>
+                                        <option value="cls2">Class Two</option>
+                                        <option value="cls3">Class Three</option>
+                                        <option value="cls4">Class Four</option>
+                                        <option value="cls5">Class Five</option>
+                                        <option value="cls6">Class Six</option>
+                                        <option value="cls7">Class Seven</option>
+                                        <option value="cls8">Class Eight</option>
+                                    </select>
+                                </div>
+
+                                <label>Organisation:</label>
+                                <div class="selectbox">
+                                    <select id="memberOrgSearch" class="selectbox-select">
+                                        <option value="" disabled selected>Organisation..</option>
+                                        <option value="morg1">Association for Women in the Sciences</option>
+                                        <option value="morg2">Nutrition Society of New Zealand</option>
+                                        <option value="morg3">Philosophy of Education Society of Australasia</option>
+                                        <option value="morg4">Physiological Society of New Zealand</option>
+                                        <option value="morg5">Population Association of New Zealand</option>
+                                        <option value="morg6">Royal Astronomical Society of New Zealand</option>
+                                        <option value="morg7">Sociological Association of Aotearoa NZ (SAANZ)</option>
+                                        <option value="morg8">New Zealand Society for Oncology</option>
+                                    </select>
+                                </div>    
+
+                                <label>Year joined:</label>
+                                <div class="selectbox">
+                                    <select id="searchFundYearAwarded" class="selectbox-select">
+                                        <option value="" disabled selected>Year..</option>
+                                        <option value="rfy1">2017</option>
+                                        <option value="rfy2">2016</option>
+                                        <option value="rfy3">2015</option>
+                                        <option value="rfy4">2014</option>
+                                        <option value="rfy5">2013</option>
+                                        <option value="rfy6">2012</option>
+                                        <option value="rfy7">2011</option>
+                                        <option value="rfy8">2010</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                        </fieldset>
+
+
+                        <fieldset class="search-wrap event-wrap">
+                            <legend>Events</legend>
+                            <div class="fieldsetPadding">
+
+                                <label>Title:</label>
+                                <input placeholder="Title.." id="titleEvent" type="text"/>
+
+                                <label>Topic:</label>
+                                <div class="selectbox">
+                                    <select id="eventTopicSearch"  class="selectbox-select">
+                                        <option value="" disabled selected>Topic..</option>
+                                        <option value="et1">Event Topic One</option>
+                                        <option value="et2">Event Topic Two</option>
+                                        <option value="et3">Event Topic Three</option>
+                                        <option value="et4">Event Topic Four</option>
+                                        <option value="et5">Event Topic Five</option>
+                                        <option value="et6">Event Topic Six</option>
+                                        <option value="et7">Event Topic Seven</option>
+                                        <option value="et8">Event Topic Eight</option>
+                                    </select>
+                                </div>
+
+                                <label>Location:</label>
+                                <div class="selectbox">
+                                    <select id="eventLocationSearch" class="selectbox-select">
+                                        <option value="" disabled selected>Location..</option>
+                                        <option value="el1">North Island</option>
+                                        <option value="el2">South Island</option>
+                                        <option value="el3">Auckland</option>
+                                        <option value="el4">Hamilton</option>
+                                        <option value="el5">Napier</option>
+                                        <option value="el6">Wellington</option>
+                                        <option value="el7">Christchurch</option>
+                                    </select>
+                                </div>
+
+                                <label>Speaker:</label>
+                                <div class="selectbox">
+                                    <select id="eventSpeakerSearch" class="selectbox-select">
+                                        <option value="" disabled selected>Speaker..</option>
+                                        <option value="es1">Joe Blogs</option>
+                                        <option value="es2">Jane Doe</option>
+                                        <option value="es3">Chuck Norris</option>
+                                        <option value="es4">Joe King</option>
+                                        <option value="es5">Jack Sun</option>
+                                        <option value="es6">Don Key</option>
+                                    </select>
+                                </div>
+
+                                <label>Organisation:</label>
+                                <div class="selectbox">
+                                    <select id="hostOrgSearch" class="selectbox-select">
+                                        <option value="" disabled selected>Organisation..</option>
+                                        <option value="ho1">HoS NZ Charitable Trust</option>
+                                        <option value="ho2">Motu Economic and Public Policy Research</option>
+                                        <option value="ho3">National Science-Technology Roadshow Trust</option>
+                                        <option value="ho4">New Zealand Association of Economists</option>
+                                        <option value="ho5">Opus Intl Laboratories</option>
+                                        <option value="ho6">Science Alive</option>
+                                    </select>
+                                </div>
+
+                                <label>Event Date</label>
+                                        <div class="selectbox">
+                                            <select id="eventMonthSearch" class="selectbox-select">
+                                                <option value="" disabled selected>Month..</option>
+                                                <option value="em1">January</option>
+                                                <option value="em2">February</option>
+                                                <option value="em3">March</option>
+                                                <option value="em4">April</option>
+                                                <option value="em5">May</option>
+                                                <option value="em6">June</option>
+                                                <option value="em7">July</option>
+                                                <option value="em8">August</option>
+                                                <option value="em9">September</option>
+                                                <option value="em10">October</option>
+                                                <option value="em11">November</option>
+                                                <option value="em12">December</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="clear"></div>
+                                        <br/>
+                                        <input class="eventYearRad" id="currentYearEvent" type="radio" name="yearEvent" value="2017"/>
+                                        <label class="rad" for="currentYearEvent">2017</label>
+                                        <div class="clear"></div>
+                                        <input class="eventYearRad" id="nextYearEvent" type="radio" name="yearEvent" value="2018"/>
+                                        <label class="rad" for="nextYearEvent">2018</label>
+
+                            </div>
+                        </fieldset>
+
+
+                        <div class="button-outer">
+                            <button type="submit" name="action_submitsearch" value="Send" class="button action" id="Form_SearchForm">
+                                    <a href="#">Search</a>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="clear"></div>
+
+            <div class="bottom-share">
+                <div class="left-share">
+                    <a href="1">
+                        <span class="lstext" href="#">Pages you may also like</span>
+                        <span class="lstitle" href="#">What is the Marsden Fund?</span>
+                        <div class="arrow-container">
+                            <span class="arrow-head"></span>
+                            <span class="arrow-line"></span>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="right-share">
+                    <a href="2">
+                        <span class="rstext" href="#">Like what you see?</span>
+                        <span class="rstitle" href="#">Share this page</span>
+                        <div class="share-image"></div>
+                    </a>
+                </div>
+            </div>
+            
+            
+
+        </div>
+        <div class="clear"></div>
+        <div class="footer">
+            <div class="footer-content">
+                <div class="social-icons md-col-4 lrg-col-2">
+                    <a class="fb-icon" href="http://www.facebook.com"></a>
+                    <a class="twitter-icon" href="http://www.twitter.com"></a>
+                    <!-- <a class="vimeo-icon" href="http://www.vimeo.com"><img src="img/foot/vimeo-icon.svg" /></a> -->
+                </div>
+                <div class="md-col-4 lrg-col-3 facilities-outer button-outer">
+                    <div class="facilities button">
+                        <a href="#">Facilities</a>
+                    </div>
+                </div>
+                <div class="md-col-4 lrg-col-3 join-us-outer button-outer">
+                    <div class="join-us button">
+                        <a href="#">Join Us</a>
+                    </div>
+                </div>
+                
+                
+                <div class="selectbox lrg-col-4">
+                    <select id="newsletter" class="selectbox-select">
+                        <option value="" disabled selected>Sign up to Newsletters</option>
+                        <option value="nl1">Mailchimp newsletter one</option>
+                        <option value="nl2">Mailchimp newsletter two</option>
+                        <option value="nl3">Mailchimp newsletter three</option>
+                        <option value="nl4">Mailchimp newsletter four</option>
+                        <option value="nl5">Mailchimp newsletter five</option>
+                    </select>
+                </div>
+                <div class="clear"></div>
+                <div class="foot-logos">
+                    <a href="#" class="footlogoorcid"></a> 
+                    <a href="#" class="footlogo150"></a>
+                                
+                </div>
+                <div class="clear"></div>
+
+                <div class="bottom-foot-container">
+                    <div class="foot-eds">
+                        
+                    </div>
+
+
+
+
+                    <div class="copyright"><p>&copy; Royal Society of New Zealand 2017</p></div>
+                    <div class="foot-links">
+                        <a href="#" class="foot-link">Sitemap</a><!-- <span class="pipe-divide"></span> -->
+                        <a href="#" class="foot-link">Vacancies</a><!-- <span class="pipe-divide"></span> -->
+                        <a href="#" class="foot-link">About Us</a><!-- <span class="pipe-divide"></span> -->
+                        <a href="/#" class="foot-link" data-toggle="modal" data-target="#contactModal">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+
+        
+        
+
+        <script src="js/vendor/min/jquery3.1.1-min.js"></script>
+        <script src="js/vendor/min/modernizr-csscontent-transform-svg-min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/vendor/min/bootstrap-modal.min.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>

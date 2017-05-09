@@ -1,0 +1,82 @@
+$susy: (
+	columns: 12,
+	gutters: 0,
+	container: 1170px,
+	global-box-sizing: border-box,
+	//debug: (image: show)
+);
+
+@include border-box-sizing;
+
+.container, .banner-content, .footer, .nav-container, .banner-text-container, .content, .modal, .microsite .footer-content{
+	@include container();
+
+	.sml-col-12{
+		@include span (12 of 12);
+		
+	}
+	.sml-col-8{
+		@include span (8 of 12);
+		
+	}
+	.sml-col-6{
+		@include span (6 of 12);
+		
+	}
+	.sml-col-4{
+		@include span (4 of 12);
+		
+	}
+
+
+	@media screen and (min-width: $tab-bp) {
+		.md-col-9{
+			@include span (9 of 12);
+		}
+		.md-col-8{
+			@include span (8 of 12);
+		}
+		.md-col-6{
+			@include span (6 of 12);
+		}
+		.md-col-5{
+			@include span (5 of 12);
+		}
+		.md-col-4{
+			@include span (4 of 12);
+		}
+		.md-col-3{
+			@include span (3 of 12);
+		}
+		.md-col-2{
+			@include span (2 of 12);
+		}
+		
+	}
+
+	@media screen and (min-width: $full-bp) {
+		.lrg-col-9{
+			@include span (9 of 12);
+		}
+		.lrg-col-8{
+			@include span (8 of 12);
+		}
+		.lrg-col-6{
+			@include span (6 of 12);
+		}
+		.lrg-col-5{
+			@include span (5 of 12);
+		}
+		.lrg-col-4{
+			@include span (4 of 12);
+		}
+		.lrg-col-3{
+			@include span (3 of 12);
+		}
+		.lrg-col-2{
+			@include span (2 of 12);
+		}
+	}
+
+		
+}

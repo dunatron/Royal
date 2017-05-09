@@ -1,0 +1,299 @@
+.microsite{
+	.micro-banner-container{
+		background-color:$color-black;
+		.micro-top-banner{
+			background-color:$color-black;
+			
+			@media screen and (min-width: $tab-bp) {
+				height:125px;
+			}
+	    	.micrologo{
+	    		margin:10px 10px 20px 10px;
+	    		max-width:300px;
+	    		float:right;
+	    		max-height:105px;
+	    		@media screen and (min-width: $tab-bp) {
+	    			position:absolute;
+	    			top:0;
+	    			right:0;
+	    			margin:10px;
+	    		}
+	    	}
+	    	.microbanner-contain{
+	    		float:left;
+	    		position:relative;
+	    		padding-top:10px;
+	    		
+	    		padding-left:15px;
+	    		@media screen and (min-width: $tab-bp) {
+	    			padding-left:30px;
+	    			padding-top:53px;
+	    		}
+	    		@media screen and (min-width: $full-bp) {
+	    			padding-left:45px;
+	    		}
+	    		a{
+	    			font-size:16px;
+	    			line-height:20px;
+	    			margin-left:35px;
+	    			color:$color-white;
+	    		}
+	    		.arrow-container{
+	    			position:absolute;
+	    			transform:rotate(180deg);
+	    			-webkit-transform:rotate(180deg);
+	    			-moz-transform:rotate(180deg);
+	    			-ms-transform:rotate(180deg);
+	    			left:15px;
+	    			bottom:4px;
+		    		@media screen and (min-width: $tab-bp) {
+		    			left:30px;
+		    		}
+		    		@media screen and (min-width: $full-bp) {
+		    			left:45px;
+		    		}
+	    			.arrow-head{
+	    				border-color:$color-white;
+	    			}
+	    			.arrow-line{
+	    				background-color:$color-white;
+	    			}
+	    		}
+	    		&:hover .arrow-container, &:hover .arrow-line{
+					width:30px;
+					-webkit-transition: width .25s; /* For Safari 3.1 to 6.0 */
+					transition: width .25s;
+				}
+				&:hover{
+					a{
+						color:$color-white;
+					}
+				}
+	    	}
+		}
+		.banner{
+			
+			.banner-text-container{
+				height:420px;
+				@media screen and (min-width: $tab-bp) {
+					height:325px;
+				}
+				.banner-title{
+					margin-top:50px;
+					font-size:40px;
+					line-height:44px;
+				}
+				.button-outer{
+					.button{
+						a{
+							border-color:$color-white;
+							color:$color-white;
+							&:hover{
+								border-color:$color-red;
+							}
+						}
+					}
+				}
+	    	}
+	    }
+	}
+	.container{
+		margin-top:30px;
+		.widget-column{
+			padding:15px;
+			@media screen and (min-width: $tab-bp) {
+				padding:0px 30px 0px 30px;
+			}
+			@media screen and (min-width: $full-bp) {
+				padding:0px 22px 0px 45px;
+			}
+			
+			&:nth-child(2){
+				padding:15px;
+				@media screen and (min-width: $tab-bp) {
+					padding:0px 30px 0px 30px;
+				}
+				@media screen and (min-width: $full-bp) {
+					padding:0px 45px 0px 22px;
+				}
+			}
+			.widget-container{
+				margin:15px 0px 30px 0px;
+				.widget-title{
+					padding-top:0px;
+				}
+				.embed-toki-html{
+					iframe{
+						width:100%;
+						@media screen and (min-width: $tab-bp) {
+							//width:768px;
+						}
+						@media screen and (min-width: $full-bp) {
+							//width:500px;
+						}
+					}
+				}
+				&:nth-child(2){
+					clear:both;
+				}
+			}
+
+			.content-wrapper{
+
+			}
+		}
+	}
+	.image-library{
+		.bx-wrapper-relative{
+			position:relative;
+			.bxslider{
+				margin:0px;
+				li{
+					display:block;
+					height:385px;
+					background-size:cover;
+					margin-left: 0px !important;
+					background-position: center;
+				}
+			}
+			.bx-controls{
+				.bx-pager{
+					text-align:center;
+					background-color:$color-black;
+					.bx-pager-item{
+						display:inline-block;
+						.bx-pager-link{
+							color:transparent;
+							height:10px;
+							width:10px;
+							border-radius:5px;
+							background-color:$color-black;
+							border:1px $color-white solid;
+							display:block;
+							margin:10px 5px 10px 5px;
+						}
+						.active{
+							background-color:$color-white;
+						}
+					}
+				}
+			}
+			.outside{
+				#slider-prev{
+					a{
+						cursor:pointer;
+						position:absolute;
+						height:385px;
+						width:24px;
+						left:0px;
+						top:0px;
+						cursor:pointer;
+						background-color:rgba(0,0,0,.7);
+						padding:5px;
+						background-image:url('../img/controls/homepage/communities-tab-arrow-back.svg');
+						background-size:11px 24px;
+						background-position:center center;
+						background-repeat:no-repeat;
+						-moz-transition: .25s;
+					    -ms-transition: .25s;
+					    -o-transition: .25s;
+					    -webkit-transition: .25s;
+					    transition: .25s;
+						&:hover{
+							background-color:rgba(0,0,0,.35);
+						}
+					}
+				}
+				#slider-next{
+					a{
+						position:absolute;
+						height:385px;
+						width:24px;
+						right:0px;
+						top:0px;
+						cursor:pointer;
+						background-color:rgba(0,0,0,.7);
+						padding:5px;
+						background-image:url('../img/controls/homepage/communities-tab-arrow.png');
+						background-size:11px 24px;
+						background-position:center center;
+						background-repeat:no-repeat;
+						-moz-transition: .25s;
+					    -ms-transition: .25s;
+					    -o-transition: .25s;
+					    -webkit-transition: .25s;
+					    transition: .25s;
+						&:hover{
+							background-color:rgba(0,0,0,.35);
+						}
+					}
+				}
+			}
+			.bx-textwrap{
+				color:$color-white;
+				background-color:$color-black;
+				padding:0px 15px 15px 15px;
+			}
+		}
+	}
+	.view-slide-position{
+		height:auto;
+		.micro-slide{
+			.slide-container{
+				height:385px;
+				.custom-slide-viewport{
+					.custom-slide-container{
+						.project-item{
+							.project-url{
+								.project-text{
+									p{
+										color:$color-black;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.footer{
+		width:100%;
+		max-width:100%;
+		margin-bottom:0px;
+		padding-bottom:15px;
+		background-color:$color-black;
+		color:$color-white;
+		margin-bottom:0px !important;
+		height:60px;
+
+		.footer-content{
+			padding-top:10px !important;
+			padding-left:15px !important;
+			@media screen and (min-width: $tab-bp) {
+				padding-left:30px !important;
+			}
+			@media screen and (min-width: $full-bp) {
+				padding-left:45px !important;
+			}
+			.bottom-foot-container{
+				text-align:left !important;	
+				.copyright{
+					text-align:left !important;
+				}	
+				.foot-eds{
+					text-align:left !important;	
+					display:inline-block;
+					margin:0px 15px 0px 0px !important;
+					background-image: url('../img/foot/footer-logo-microsite.svg') !important;
+				}
+				.copyright{
+					display:inline-block;
+					p{
+						float:left;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,12 @@
+$("#toctitle").on('click',function(){
+	if($(this).hasClass('open'))
+	{
+		$(this).removeClass('open').addClass('closed');
+		$('.royaltoc.open').removeClass('open').addClass('closed');
+	}
+	else
+	{
+		$(this).removeClass('closed').addClass('open');
+		$('.royaltoc.closed').removeClass('closed').addClass('open');
+	}
+});

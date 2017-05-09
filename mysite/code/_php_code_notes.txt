@@ -1,0 +1,24 @@
+/** use these to alter Last Edited for News and Events
+    public function onAfterWrite()
+    {
+        if (isset($this->owner->SortOrder))
+        {
+            //$this->owner->LastEdited = $this->owner->temp__ChangeableLastEditedValue;
+            //unset($this->owner->temp__ChangeableLastEditedValue);
+            $table_name = ClassInfo::baseDataClass($this->owner->ClassName); //Get the class name which holds the 'LastEdited' field. Might be for example 'SiteTree'.
+            error_log('Write: '.$table_name);
+            DB::query('UPDATE '.$table_name." SET LastEdited = '".Convert::raw2sql($this->owner->SortOrder)."'  WHERE ID = ".intval($this->owner->ID).' LIMIT 1');
+        }
+    }
+
+    public function onAfterPublish()
+    {
+        if (isset($this->owner->SortOrder))
+        {
+            //$this->owner->LastEdited = $this->owner->temp__ChangeableLastEditedValue;
+            //unset($this->owner->temp__ChangeableLastEditedValue);
+            $table_name = ClassInfo::baseDataClass($this->owner->ClassName); //Get the class name which holds the 'LastEdited' field. Might be for example 'SiteTree'.
+            error_log('Publish: '.$table_name);
+            DB::query('UPDATE '.$table_name."_Live SET LastEdited = '".Convert::raw2sql($this->owner->SortOrder)."'  WHERE ID = ".intval($this->owner->ID).' LIMIT 1');
+        }
+    }

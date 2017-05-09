@@ -1,0 +1,198 @@
+/* General */
+
+.banner * {
+	 /*border: 1px dashed green;*/
+}
+
+/* Hide icons for search and main nav */
+.banner .search,
+.banner .hamburger {
+	display: none;
+}
+
+/* Align donate to left edge on heading*/
+.wrap .banner .banner-content .donate{
+	margin-left: 0 !important;
+}
+
+
+.search-wrapper {
+	position: relative;
+	left: 0;
+	opacity: 1;
+    padding: 25px 30px 0 30px;}
+
+.search-wrapper .search-container .searchForm {
+	margin-top: 25px !important;
+}
+
+
+.search-wrapper .search-container {
+	max-width: 1170px !important;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+ /*Clearfix search container*/
+.search-container:after{
+	visibility: hidden;
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;	
+}
+
+.search-wrapper .vistorstatus {
+	clear: none;
+}
+
+
+.search-container .close-button {
+	display: none;
+}
+
+.search-wrapper .search-container .searchForm .search {
+	padding-right: 0;
+}
+
+.search-wrapper .search-container .search-active {
+	right: 0 !important;
+	bottom: 0 !important;
+	top: 0px !important;
+	/*border: 1px dashed red;*/
+}
+
+input[type='text'] {
+	height: auto !important;
+}
+
+
+
+.nav-wrapper {
+	border-top: 1px solid #a9a7a7;
+	left: 0 !important;
+	position: relative;
+	opacity: 1;
+}
+
+.nav-wrapper .nav-container .hamburger-close {
+	display: none;
+}
+
+.nav-wrapper .nav-container .nav-links{
+	margin-top: 25px;
+}
+
+.nav-wrapper .nav-container .nav-links .parent {
+	margin-top: 0 !important;
+
+}
+
+.nav-wrapper .burger-fade {
+	top: 0px; 
+}
+
+
+ /*Breadcrumbs*/
+.breadcrumbs a {
+	font-size:10px;
+	padding-bottom:2px;
+	padding-top:2px;
+
+}
+
+
+/* content-template-1.html */
+
+/* Create margin between Activity links and override css arrows with png ones */
+.content .container .activity-blocks .activity-block {
+	padding-bottom: 0 !important;
+}
+
+
+.activity-block .block-link {
+	border: 10px solid white;
+}
+
+.activity-block .block-link .arrow-container {
+	background-image: url("../img/controls/arrow-white.png");
+	background-repeat: no-repeat;
+	width: 24px;
+	height: 21px;
+}
+
+.activity-block .block-link:hover .arrow-container {
+	left: 30px !important;
+}
+
+.activity-block .block-link .arrow-container span {
+	display: none;
+}
+
+
+/* Share page */
+.bottom-share .left-share .arrow-container {
+	background-image: url("../img/controls/arrow-black.png");
+	background-repeat: no-repeat;
+	width: 24px;
+	height: 21px;
+}
+
+.bottom-share .left-share .arrow-container span {
+	display: none;
+}
+
+.wrap .bottom-share .right-share {
+    background-image: url("../img/foot/share-icon-ie8.png") !important;
+    background-position: right center;
+}
+
+
+
+/* event-template-holder.html */
+.tiles .container .content-wrapper .important-image-container .important-image {
+	-ms-behavior: url(img/ie8/backgroundsize.min.htc); // note: This link is rel to the root not the css file. ref - https://github.com/louisremi/background-size-polyfill)
+}
+
+.tiles .container .content-wrapper .important-image-container .important-image .important-image-text-container .text-wrapper .arrow-container {
+	background-image: url("../img/controls/arrow-white.png");
+	background-repeat: no-repeat;
+	width: 24px;
+	height: 21px;
+}
+
+.tiles .container .content-wrapper .important-image-container .important-image:hover .important-image-text-container .text-wrapper .arrow-container {
+	left: 6px; 
+}
+
+.tiles .container .content-wrapper .important-image-container .important-image .important-image-text-container .text-wrapper .arrow-container span {
+	display: none;
+}
+
+.tiles .container .content-wrapper .content-event-box-container .content-box .content-link .content-text .text-margin .arrow-break .arrow-container {
+	background-image: url("../img/controls/arrow-black.png");
+	background-repeat: no-repeat;
+	width: 24px;
+	height: 21px;
+}
+
+.tiles .container .content-wrapper .content-event-box-container .content-box .content-link .content-text .text-margin .arrow-break .arrow-container span {
+	display: none;
+}
+
+.tiles .container .content-wrapper .content-event-box-container .content-box .content-link:hover .content-text .text-margin .arrow-break .arrow-container {
+	left: 6px; 
+}
+
+.tiles .container .content-wrapper .important-image-container .important-image .important-image-text-container {
+	background:transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#50000000,endColorstr=#50000000); /* semi-opaque black background */
+}
+
+
+
+
+
+
+
+

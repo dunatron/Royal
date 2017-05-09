@@ -1,0 +1,425 @@
+.homepage{
+	.banner{
+		//No longer full screen width because design is no longer cool
+		max-width:1170px;
+		margin:auto;
+
+
+		height:385px;
+		position:relative;
+		//.our-communities-container{
+			
+    		.communities-trigger{
+	    		position:absolute;
+				transform: rotate(-90deg);
+				-ms-transform: rotate(-90deg);
+				-webkit-transform: rotate(-90deg);
+				-moz-transform: rotate(-90deg);
+				top:340px;
+				right:-102px;
+				z-index:1;
+				background-color:#5c5c5c;
+				color:$color-white;
+				font-weight:700;
+				padding:12px 12px 12px 12px;
+				letter-spacing: 5px;
+				font-size: 12px;
+	    		line-height: 12px;
+	    		border-radius:3px 3px 0px 0px;
+	    		width:240px;
+	    		-webkit-transition: all .25s ease;
+			  	-moz-transition: all .25s ease;
+			 	 -o-transition: all .25s ease;
+			  	-ms-transition: all .25s ease;
+			  	transition: all .25s ease;
+			  	cursor:pointer;
+			  	span{
+			  		display:inline-block;
+			  	}
+			  	img{
+			  		width:11px;
+			  		height:24px;
+			  		display:inline-block;
+			  		margin:0px;
+			  		float:none;
+			  		transform: rotate(270deg);
+					-ms-transform: rotate(270deg);
+					-webkit-transform: rotate(270deg);
+					-moz-transform: rotate(270deg);
+
+			  		position:absolute;
+			  		right: 14px;
+    				top: 5px;
+			  	}
+			  	@media screen and (min-width: $tab-bp) {
+			  		top:247px;
+			  	}
+    		}
+    		.communities-trigger-active{
+				right:177px;
+				img{
+					transform: rotate(90deg);
+					-ms-transform: rotate(90deg);
+					-webkit-transform: rotate(90deg);
+					-moz-transform: rotate(90deg);
+				}
+
+    		}
+
+			
+
+    		.expand-communities-container{
+    			height:475px;
+    			width:280px;
+    			//background-color:$color-black;
+    			position:absolute;
+    			top:0px;
+    			right:0px;
+    			
+    			overflow:hidden;
+    			
+
+			  	@media screen and (min-width: $tab-bp) {
+			  		height:385px;
+			  	}
+			  	.communities-background{
+			  		height:475px;
+    				width:280px;
+    				background-color:$color-black;
+    				right: -280px;
+    				position:absolute;
+    				-webkit-transition: all .25s ease;
+				  	-moz-transition: all .25s ease;
+				 	 -o-transition: all .25s ease;
+				  	-ms-transition: all .25s ease;
+				  	transition: all .25s ease;
+				  	@media screen and (min-width: $tab-bp) {
+				  		height:385px;
+				  	}
+				  	.expand-communities-links-container{
+					  	
+				  		position:absolute;
+				  		height:230px;
+	    				width:280px;
+	    				top:240px;
+	    				right: 0px;
+	    				background-color:$color-black;
+	    				overflow:scroll;
+	    				@media screen and (min-width: $tab-bp) {
+	    					top:155px;
+	    				}
+		    			a{
+		    				display:block;
+		    				margin:0px 15px 0px 15px;
+							color:$color-white;
+							padding:12px;
+							font-size:14px;
+							line-height:14px;
+							border-top:1px $color-grey solid;
+							&:last-child{
+								border-bottom:1px $color-grey solid;
+							}
+							.community-arrow{
+								background-image:url("../img/controls/homepage/communities-arrows.svg");
+								background-size:6px 10px;
+								display:inline-block;
+								height:10px;
+								width:6px;
+								margin-left:5px;
+							}
+
+		    			}
+		    			
+		    		}
+		    	}
+		    	.communities-background-active{
+		    		right:0px;
+		    	}
+
+	    		.black-overlay{
+    				position:absolute;
+    				bottom:0px;
+    				right: 0px;
+    				background: linear-gradient(transparent, black);
+    				height:50px;
+    				width:280px;
+	    		}
+    		}
+    		.desktop-land-trigger{
+    			@media screen and (min-width: $full-bp) {
+    				right: 177px;
+					img{
+						transform: rotate(90deg) !important;
+						-ms-transform: rotate(90deg) !important;
+						-webkit-transform: rotate(90deg) !important;
+						-moz-transform: rotate(90deg) !important;
+					}
+    			}
+    		}
+    		.desktop-land-expand{
+    			@media screen and (min-width: $full-bp) {
+    				right: 0px !important;
+    			}
+    		}
+
+		//}
+		.banner-text-container{
+			@media screen and (min-width: $tab-bp) {
+				height:auto;
+				margin-top:50px
+			}
+			.banner-title{
+				font-size:38px;
+				line-height:42px;
+			}
+		}
+	}
+
+	.container{
+		
+		.panel-container{
+			position:relative;
+			//display:none;
+			height:0px;
+			overflow:hidden;
+			opacity: 0;
+			.panel-img-container{
+				height:190px;
+				display:block;
+				background-repeat:no-repeat;
+				background-position:center;
+				background-size:cover;
+				position:relative;
+				overflow: hidden;
+				cursor:pointer;
+				&:hover .panel-img{
+					-webkit-filter: blur(0px);
+				  	-moz-filter: blur(0px);
+				  	-o-filter: blur(0px);
+				  	-ms-filter: blur(0px);
+				  	filter: blur(0px);
+				}
+				.panel-img{
+					height:205px;
+					display:block;
+					background-repeat:no-repeat;
+					background-position:center;
+					background-size:cover;
+					position:absolute;
+					left:0px;
+					top:-10px;
+					-webkit-transition: .25s -webkit-filter linear;
+					-moz-transition: .25s -moz-filter linear;
+					-moz-transition: .25s filter linear;
+					-ms-transition: .25s -ms-filter linear;
+					-o-transition: .25s -o-filter linear;
+					transition: .25s filter linear;
+					-webkit-filter: blur(2px);
+				  	-moz-filter: blur(2px);
+				  	-o-filter: blur(2px);
+				  	-ms-filter: blur(2px);
+				  	filter: blur(2px);
+				}
+				.backdrop-slide{
+					position:absolute;
+					height:190px;
+					width: 100%;
+					background-color: rgba(0,0,0,0.35);
+					top: 130px;
+					color: $color-white;
+					-webkit-transition: all .25s ease;
+				  	-moz-transition: all .25s ease;
+				 	-o-transition: all .25s ease;
+				  	-ms-transition: all .25s ease;
+				  	transition: all .25s ease;
+					text-align: left;
+
+					.panel-text{
+						display:block;
+					    color: $color-white;
+					    padding:20px;
+					    font-size:16px;
+					    line-height: 20px;
+					    font-weight:700;
+					    overflow: hidden;
+					    white-space: nowrap;
+					    text-overflow: ellipsis;
+					    
+					    
+						@media screen and (min-width: $tab-bp) {
+
+						}
+					}
+					.panel-link{
+						display:block;
+						padding:10px 20px 0px 20px;
+						overflow:hidden;
+						white-space:nowrap;
+						text-overflow: ellipsis;
+					    color: $color-white;
+					    font-weight:700;
+					    font-size:12px;
+					    line-height:16px;
+					}
+				}
+				.backdrop-slide-active{
+					top:0px;
+				}
+				&:hover{
+					
+				}
+			}
+			
+			
+			
+		}
+		.panel-active{
+			//display:block;
+			opacity:1;
+			height:auto;
+			-webkit-transition:  .5s ease-in-out;
+		    -moz-transition:  .5s ease-in-out;
+		    -ms-transition:  .5s ease-in-out;
+		    -o-transition:  .5s ease-in-out;
+		}
+		.cleartab{
+			clear:both;
+			@media screen and (min-width: $full-bp) {
+				clear:none;
+			}
+		}
+		
+		
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+	.explore-filter-container{
+		background-color:$color-black;
+		//No longer full screen width because design is no longer cool
+		max-width:1170px;
+		margin:auto;
+		//height:240px;
+		.filter-center-text{
+			text-align:center;
+			h3{
+				color:$color-white;
+				letter-spacing: 4px;
+				text-align: center;
+				padding:10px 0px 10px 0px;
+				font-size:12px;
+				line-height:18px;
+			}
+			.filter-buttons{
+				width:320px;
+				margin:auto;
+				@media screen and (min-width: $tab-bp) {
+					width:365px;
+				}
+				
+				.filter{
+					padding:15px 14px 15px 14px;
+					font-size:12px;
+					//background-image:url("http://www.placekitten.com/10/6");
+					//background-size:10px 6px;
+					//background-position:right 10px center;
+					//background-repeat:no-repeat;
+					color:$color-white;
+					font-weight:700;
+					display:block;
+					position:relative;
+					float:left;
+					border-top:1px $color-red solid;
+					//border-top:1px $color-red solid;
+					background-color:$color-black;
+					-moz-transition: .25s;
+				    -ms-transition: .25s;
+				    -o-transition: .25s;
+				    -webkit-transition: .25s;
+				    transition: .25s;
+				    @media screen and (min-width: $tab-bp) {
+				    	font-size:14px;
+				    }
+					&:hover{
+						background-color:$color-red;
+					}
+					img{
+						width:34px;
+						height:0px;
+						position:absolute;
+						top:47px;
+						max-height:0px;
+						z-index:4;
+						-moz-transition: .25s;
+					    -ms-transition: .25s;
+					    -o-transition: .25s;
+					    -webkit-transition: .25s;
+					    transition: .25s;
+					}
+				}
+				
+				.filter-research{
+					//padding-left:0px;
+					img{
+						left:40px;
+						//display:none;
+					}
+				}
+				.filter-stuteach{
+					img{
+						left:65px;
+						//display:none;
+					}
+				}
+				.filter-curious{
+					img{
+						left:23px;
+						//display:none;
+					}
+				}
+				.filter-active{
+					background-color:$color-red;
+					img{
+						display:block;
+						max-height:13px;
+						height:13px;
+					}
+				}
+			}
+		}
+		.donate{
+			margin:0px;
+			float:left;
+			a{
+				display:block;
+				margin:30px 0px 30px 15px;
+			}
+			@media screen and (min-width: $tab-bp) {
+				display:none;
+			}
+		
+		}
+	}
+	.custom-slide-container{
+		@media screen and (min-width: $tab-bp) {
+			margin-right:24px;
+		}
+	}
+	@media screen and (min-width: $tab-bp) {
+		.button-next{
+			right:-24px;
+		}
+	}
+
+}

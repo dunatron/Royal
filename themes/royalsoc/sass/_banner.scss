@@ -1,0 +1,239 @@
+//Standard Banner
+.wrap{
+	.banner{
+		
+		img{
+			float:right;
+			margin-top:10px;
+		}
+		.logo{
+			background-image:url("../img/navigation/main-logo-desktop.svg");
+			height:102px;
+			width:152px;
+			display:block;
+			margin-top:12px;
+			position:absolute;
+			right:0px;
+			z-index:3;
+		}
+		.banner-content{
+			height:127px;
+			
+			.hamburger{
+				width:46px;
+				height:46px;
+				float:left;
+				border-radius:25px;
+				border:1px $color-white solid;
+				margin: 40px 0px 0px $smallscreen-margin;
+				position:relative;
+				cursor:pointer;
+				transition: all .25s ease-in-out;
+			   -moz-transition: all .25s ease-in-out;
+			   -webkit-transition: all .25s ease-in-out;
+				@media screen and (min-width: $tab-bp) {
+					margin: 40px 0px 0px $medscreen-margin;
+				}
+				@media screen and (min-width: $full-bp) {
+					margin: 40px 0px 0px $fullscreen-margin;
+				}
+				&:hover{
+					border:1px $color-red solid;
+				}
+				&:hover .filling, &:hover .filling:after, &:hover .filling:before{
+					background-color:$color-red;
+				}
+				.collapse-menu:before, .collapse-menu:after,{
+					top:0px;
+				}
+				.filling{
+					background-color:$color-white;
+					display:block;
+					width:30px;
+					height:1px;
+					left:7px;
+					top:22px;
+					position:absolute;
+					transition: all .25s ease-in-out;
+				   -moz-transition: all .25s ease-in-out;
+				   -webkit-transition: all .25s ease-in-out;
+					&:before{
+						background-color:$color-white;
+						display:block;
+						width:30px;
+						height:1px;
+						left:0px;
+						top:-10px;
+						position:absolute;
+						content:"";
+						transition: all .25s ease-in-out;
+					   -moz-transition: all .25s ease-in-out;
+					   -webkit-transition: all .25s ease-in-out;
+					}
+					&:after{
+						background-color:$color-white;
+						display:block;
+						width:30px;
+						height:1px;
+						left:0px;
+						top:10px;
+						position:absolute;
+						content:"";
+						transition: all .25s ease-in-out;
+				   		-moz-transition: all .25s ease-in-out;
+				   		-webkit-transition: all .25s ease-in-out;
+					}
+				}
+				.collapse-menu:before, .collapse-menu:after,{
+					top:0px;
+				}
+			}
+			.search{
+				width:47px;
+				height:46px;
+				float:left;
+				background-image:url("../img/controls/search-icon.svg");
+				background-repeat: no-repeat;
+				margin: 40px 0px 0px $smallscreen-margin;
+				cursor:pointer;
+				transition: all .25s ease-in-out;
+				-moz-transition: all .25s ease-in-out;
+				-webkit-transition: all .25s ease-in-out;
+				@media screen and (min-width: $tab-bp) {
+					margin: 40px 0px 0px $medscreen-margin;
+				}
+				@media screen and (min-width: $full-bp) {
+					margin: 40px 0px 0px $fullscreen-margin;
+				}
+				&:hover{
+					background-image:url("../img/controls/search-icon-hover.svg");
+
+				}
+				.magnif{
+
+				}
+
+			}
+			.donate{
+				
+				float:left;
+				display:none;
+				text-align:center;
+				@media screen and (min-width: $tab-bp) {
+					display:block;
+				}
+			}
+
+		}
+	}
+}
+
+
+//Content Banner
+.content{
+	.banner{
+		background-color:$color-black;
+		.banner-content{
+			
+		}
+	}
+}
+
+
+//Panel Page Banner
+.large-banner{
+	.banner{
+		background-position: center;
+    	background-size: cover;
+		height:420px;
+		background-color:$color-black;
+
+		//No longer full screen width because design is no longer cool
+		max-width:1170px;
+		margin:auto;
+		position:relative;
+
+		@media screen and (min-width: $tab-bp) {
+			height:325px;
+		}
+		@media screen and (min-width: $full-bp) {
+			background-size: 1170px auto;
+		    background-position: right;
+		    background-repeat: no-repeat;
+		}
+		.banner-image{
+			max-height:325px;
+		}
+		.banner-content{
+			
+		}
+		.banner-text-container{
+			height:293px;
+			overflow:hidden;
+			display:table-cell;
+        	vertical-align:middle;
+        	color:$color-white;
+			padding:0px $smallscreen-margin 20px $smallscreen-margin;
+			//float:left;
+			font-size:18px;
+			line-height:22px;
+			@media screen and (min-width: $tab-bp) {
+				padding:0px 0px 20px $medscreen-margin;
+				height:198px;
+				display:block;
+				float:left;
+				width:66%;
+			}
+			@media screen and (min-width: $full-bp) {
+				padding:0px $fullscreen-margin 20px $fullscreen-margin;
+				display:block;
+				width:100%;
+				//margin:auto;
+				float:none;
+			}
+			h1{
+				padding:0px 0px 20px 0px;
+			}
+			.banner-title{
+				font-size:45px;
+				line-height:48px;
+				padding:0px 45px 20px 0px;
+				@media screen and (min-width: $tab-bp) {
+					padding:0px 0px 20px 0px;
+				}
+			}
+
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

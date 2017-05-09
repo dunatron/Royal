@@ -1,0 +1,246 @@
+.wrap{
+	.footer{
+		margin-bottom:15px;
+		.footer-content{
+			padding:$small-content-padding;
+			@media screen and (min-width: $tab-bp) {
+
+
+			}
+			.social-icons{
+				padding:30px 0px 0px 0px;
+				text-align: center;
+				@media screen and (min-width: $tab-bp) {
+					//border-right:1px $color-grey solid;
+					padding:0px 0px 0px 0px;
+					margin:30px 0px 0px 0px;
+					//border-left:1px $color-grey solid;
+					width:110px !important;
+				}
+				@media screen and (min-width: $full-bp) {
+					border:none;
+				}
+				img{
+					
+				}
+				.fb-icon{
+
+					background-image:url("../img/foot/facebook-icon.svg");
+					display:inline-block;
+					width:48px;
+					height:48px;
+					transition: all .25s ease-in-out;
+				   	-moz-transition: all .25s ease-in-out;
+				   	-webkit-transition: all .25s ease-in-out;
+				   	&:before{
+				   		//load hover first
+				   		content: url('../img/foot/facebook-icon-hover.svg');
+						width:0;
+						height:0;
+						visibility:hidden;
+				   	}
+					&:hover{
+						background-image:url("../img/foot/facebook-icon-hover.svg");
+					}
+				}
+				.twitter-icon{
+					background-image:url("../img/foot/twitter-icon.svg");
+					display:inline-block;
+					width:48px;
+					height:48px;
+					margin-left:5px;
+					transition: all .25s ease-in-out;
+				   	-moz-transition: all .25s ease-in-out;
+				   	-webkit-transition: all .25s ease-in-out;
+				   	&:before{
+				   		//load hover first
+				   		content: url('../img/foot/twitter-icon-hover.svg');
+						width:0;
+						height:0;
+						visibility:hidden;
+				   	}
+					&:hover{
+						background-image:url("../img/foot/twitter-icon-hover.svg");
+					}
+				}
+
+			}
+			.button-outer{
+				text-align: center;
+				@media screen and (min-width: $tab-bp) {
+					margin-left:20px;
+				}
+			}
+			.join-us-outer{
+				@media screen and (min-width: $tab-bp) {
+					margin-top:25px;
+					width:138px !important;
+					
+				}
+				@media screen and (min-width: $full-bp) {
+				}
+				.join-us{
+					text-align:center;
+					@media screen and (min-width: $tab-bp) {
+					}
+					a{
+						&:hover{
+
+						}
+
+					}
+					
+					
+				}
+			}
+			.facilities-outer{
+				@media screen and (min-width: $tab-bp) {
+					margin-top:25px;
+					width:147px !important;
+				}
+				@media screen and (min-width: $full-bp) {
+				}
+				.facilities{
+					text-align:center;
+					a{
+						&:hover{
+						}
+
+					}
+					
+					
+				}
+			}
+			.clear{
+				@media screen and (min-width: $full-bp) {
+					display:none;
+				}
+			}
+			.sign-up-newletters-outer{
+				//float:none;
+				@media screen and (min-width: $tab-bp) {
+					margin-top:25px;
+					width:242px !important;
+				}
+				@media screen and (min-width: $full-bp) {
+				}
+			}
+			.foot-logos{
+				//border-bottom: 1px $color-grey solid;
+				text-align: center;
+				clear:both;
+				@media screen and (min-width: $tab-bp) {
+					//border-bottom: none;
+					padding-bottom:20px;
+				}
+				@media screen and (min-width: $full-bp) {
+					clear:none;
+				}
+				img{
+					max-width:100%;
+					max-height:100%;
+				}
+				.footlogoorcid{
+					display:block;
+					background-image:url("../img/foot/orcid-logo.png");
+					height:40px;
+					width:133px;
+					display:block;
+					margin:30px auto 20px auto;
+					@media screen and (min-width: $tab-bp) {
+						display:inline-block;
+						vertical-align: middle;
+						margin:0px 20px 0px 0px;
+					}
+				}
+				.footlogo150{
+					background-image:url("../img/foot/150th-logo.svg");
+					height:128px;
+					width:168px;
+					display:block;
+					margin:0px auto 30px auto;
+					@media screen and (min-width: $tab-bp) {
+						display:inline-block;
+						vertical-align: middle;
+						margin:0px 0px 0px 20px;
+						margin-top:25px;
+						
+					}
+					@media screen and (min-width: $full-bp) {
+						float:right;
+						
+					}
+				}
+				
+			}
+			.bottom-foot-container{
+				@media screen and (min-width: $tab-bp) {
+					text-align: center;
+					height:25px;
+					
+				}
+				@media screen and (min-width: $full-bp) {
+					float:left;
+					margin-top:25px;
+				}
+
+
+				.foot-eds{
+					text-align: center;
+					width:176px;
+					height:21px;
+					background-image:url("../img/foot/tagline-logo.svg");
+					margin:20px auto 20px auto;
+					@media screen and (min-width: $tab-bp) {
+						margin:0px 10px 0px 0px;
+						padding:0px;
+						display:inline-block;
+					}
+				}
+				.copyright{
+					text-align: center;
+					font-size:12px;
+					font-weight:700;
+					@media screen and (min-width: $tab-bp) {
+						//float:left;
+						margin:0px;
+						padding:0px;
+						display:inline-block;
+						p{
+							float:left;
+							line-height:21px;
+						}
+					}
+				}
+				.foot-links{
+					text-align: center;
+					font-size:12px;
+					@media screen and (min-width: $tab-bp) {
+						//float:left;
+						margin:0px;
+						padding:0px;
+						display:inline-block;
+					}
+					.foot-link{
+						color:$color-black;
+						
+						line-height:12px;
+						margin:0px 0px 5px 5px;
+						padding:0px 0px 0px 5px;
+						border-left:1px $color-black solid;
+						&:first-child{
+							border-left:none;
+						}
+						@media screen and (min-width: $tab-bp) {
+							float:left;
+							&:first-child{
+								border-left:1px $color-black solid;
+							}
+						}
+
+					}
+				}
+			}
+		}
+	}
+}
